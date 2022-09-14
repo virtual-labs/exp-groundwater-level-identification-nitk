@@ -1,0 +1,243 @@
+#simscreen
+{
+position: relative;
+left:0px;
+top:0px;
+height: 600px; 
+width:800px;
+border:solid 1px;
+}
+
+#copyright{
+position: absolute;
+left:50px;
+top: 580px;
+font-family: verdana; 
+font-size:12px
+}
+
+#title{
+position:relative;
+left: 0px;
+top: 0px;
+height:40px;
+font-size: 24px;
+text-align:center;
+background-color: black;
+font-family: verdana;
+color: White;
+text-transform: uppercase; 
+}
+
+#title h3{
+padding-top:2px;
+margin:0px;}
+
+
+
+.dot {
+	height: 8px;
+	width: 8px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+  }
+#question-div{
+	position: absolute;
+	left:300px;
+	top:350px;
+	width:300px;
+	height:120px;
+	border:solid 1px gray;
+	background-color: gray;
+	filter: alpha(opacity=55);
+	color:white;
+	visibility:hidden;
+}
+
+.simsubscreen
+{
+position:absolute;
+left: 50px;
+top: 50px;
+height:530px;
+width:745px;
+
+}
+.screen
+{
+position:absolute;
+left: 50px;
+top: 50px;
+height:530px;
+width:455px;
+
+}
+.incanvas
+{
+margin:5px 0 0 5px;
+padding:0;
+}
+#nextButton{
+    position: absolute;
+    left: 750px;
+    top: 530px;
+cursor:pointer;
+}
+
+.steptext{
+display:inline;
+}
+
+.circlebg
+{
+border-radius:100%;
+font-size:25px;
+color:#fff;
+text-align:center;
+background:#000
+}
+.tooltip1 .tooltiptext1 {
+	visibility: hidden;
+	width: 400px;
+     /*background-color: grey;*/
+	color: #fff;
+    
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+    margin-left: -70px;
+    margin-top: -30px;
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+    }
+    
+    .tooltip1:hover .tooltiptext1 {
+    
+	visibility: visible;
+    }
+    
+    .input {
+	  position: absolute;
+    }
+    
+    .tooltip1 {
+	  display: none;
+	  padding: 5px;
+    
+    }
+    
+    .input:hover .tooltip1 {
+	  background: black;
+	  border-radius: 3px;
+	  bottom: 30px;
+	  color: white;
+	  display: inline;
+	  height: 20px;
+	  left: 0;
+	  line-height: 20px;
+    
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+    }
+    
+    /* Firefox */
+    input[type=number] {
+	-moz-appearance: textfield;
+    }
+
+    .tooltip {
+      position: initial;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+      color:red;
+    }
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 500px;
+      background-color: black;
+      color: #fff;  padding: 5px 10px 5px 10px;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 100;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+    
+    .container {
+	position: relative;
+	text-align: center;
+	color: white;
+    }
+
+    .bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+    }
+@-webkit-keyframes mover{
+	0%{ transform:rotate(-20deg)}
+	100%{ transform:rotate(0deg)}
+     }
+     @keyframes mover{
+	 0%{ transform:rotate(-20deg)}
+	 100%{ transform:rotate(0deg)}
+     }
+
+     @keyframes movep {
+	0% {top:130px;}
+	100% { top:140px;}
+	}
+    @-webkit-keyframes movep {
+	0% { top:130px;}
+	100% { top:140px;}
+    }
+
+     @keyframes movek {
+	0% {left: 290px; top: 420px;}
+	100% { left: 316px; top: 398px;}
+	}
+    @-webkit-keyframes movek {
+	0% { left: 290px; top: 420px;}
+	100% { left: 316px; top: 398px;}
+    }
+    @keyframes movek1 {
+	0% {left: 290px; top: 420px;}
+	100% { left: 320px; top: 328px;}
+	}
+    @-webkit-keyframes movek1 {
+	0% {left: 290px; top: 420px;}
+	100% { left: 320px; top: 328px;}
+    }
+
+    .zoom {
+	position: absolute;left: 10px; width:auto;top: 300px;
+    }
+    
+    .zoom:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+    }
+   
+    /* @keyframes movek1 {
+	0% {top: 398px;left: 340px;}
+	100% {top: 347px;left: 345px;}
+	}
+    @-webkit-keyframes movek1 {
+	0% {top: 398px;left: 340px;}
+	100% {top: 347px;left: 345px;}
+    }
+    @-webkit-keyframes movek2{
+	0%{ transform:rotate(0deg)}
+	100%{ transform:rotate(-20deg)}
+     }
+     @keyframes movek2{
+	 0%{ transform:rotate(0deg)}
+	 100%{ transform:rotate(-20deg)}
+     } */
