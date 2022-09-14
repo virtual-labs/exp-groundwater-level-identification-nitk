@@ -2,38 +2,166 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following Electronic array Geometry is used in this experiment?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Wenner Array",
+        "b": "Pole-Dipole Array",
+        "c": "Dipole-Dipole Array",
+        "d": "Schlumberger Array"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": ""
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "According to IS 15736:2007, what is the range of resistivity (in Ohm-m) for groundwater? ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "10-100",
+        "b": "10-800",
+        "c": "10-1000",
+        "d": "10-8000"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "In the experiment, the inner electrodes are current electrodes and it causes the flow of current",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The apparent resistance depends on",
+      "answers": {
+        "a": "Potential drop",
+        "b": "Flow of current",
+        "c": "Distance between the electrodes",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "The apparent resistivity measured in",
+      "answers": {
+        "a": "Ohm",
+        "b": "Mho",
+        "c": "Ohm-m",
+        "d": "Siemen-m"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": ""
+    },
+    {
+      "question": "In general, the depth of the soil sample is",
+      "answers": {
+        "a": "One-eight to the distance between current electrodes",
+        "b": "One-sixth to the distance between current electrodes",
+        "c": "One-fourth to the distance between current electrodes",
+        "d": "One-third to the distance between current electrodes"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The voltmeter is used for measuring the current",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The terminals P1 and P2 in the georesistivity meter are connected to",
+      "answers": {
+        "a": "Current Electrode",
+        "b": "Potential Electrodes",
+        "c": "Battery",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The terminals C1 and C2 in the georesistivity meter are connected to",
+      "answers": {
+        "a": "Current Electrode",
+        "b": "Potential Electrodes",
+        "c": "Battery",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Which of the following instrument is NOT used in this test?",
+      "answers": {
+        "a": "Battery",
+        "b": "Stopwatch",
+        "c": "Hammer",
+        "d": "Electrodes"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
     }
   ]
 }
