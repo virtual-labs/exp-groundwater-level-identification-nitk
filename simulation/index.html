@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/mathstyle.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script> -->
+    <script>
+        var simsubscreennum=0;
+        var temp=0;
+        var snd = document.getElementById("sound");
+    </script>
+<!-- <script src='https://cdn.plot.ly/plotly-2.25.2.min.js'></script> -->
+
+</head>
+<body style="margin:0; font-family:verdana;">
+    <div id="simscreen">
+    <div id="title"><h3>Geo-resistivity test for Groundwater level identification</h3></div>
+    <div class="simsubscreen" id="canvas0" >
+    <h4 class="incanvas">Objective:</h4>
+    <p class="incanvas" style="font-size:14px;">Determination of ground water level by using georesistivity method.</p><br/>
+    <h4 class="incanvas">Apparatus used:</h4>
+    <p class="incanvas" style="font-size:14px;">Resistivity meter, cables, battery, hammer, measuring tape etc.  </p>
+    <!-- <img style="position:absolute; left:120px; top:265px; max-width:200px; height:240px;width:100%" title="Impact testing machine"  src="images/1.png" /> -->
+    <img style="position:absolute;left: 192px;
+    top: 277px;
+    width: 70%;" src="images/table.png" />
+    <img
+        style="
+          position: absolute;
+          left: 31rem;
+    top: 17rem;
+    width: 25%;
+
+        "
+        src="./images/fullsetup.png"
+        title="Geo-resistivity meter"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 27rem;
+    top: 19rem;
+    width: 9%;
+
+        "
+        src="./images/spoolR.png"
+        title="Spool"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 23rem;
+    top: 19rem;
+    width: 8%;
+
+        "
+        src="./images/spoolB.png"
+        title="Spool"
+      />
+      <img
+      style="
+        position: absolute;
+        left: 19rem;
+    top: 317px;
+    width: 7%;
+    transform: rotate(45deg);
+      "
+      src="./images/hammer1.png"
+      title="Hammer"
+    />
+    <img
+    style="
+      position: absolute;
+      left: 16rem;
+    top: 296px;
+    width: 5%;
+
+    "
+    src="./images/electrode.png"
+    title="Electrodes"
+  />
+  <img
+  style="
+    position: absolute;
+    left: 37.5rem;
+    top: 298px;
+    width: 11%;
+  "
+  src="./images/tape.png"
+  title="Measuring tape"
+/>
+      <!-- <img
+        style="
+          position: absolute;
+          left: 15rem;
+    top: 20rem;
+    width: 18%;
+
+        "
+        src="./images/electrodesA.png"
+        title="Current Electrode"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 15rem;
+    top: 21rem;
+    width: 18%;
+
+        "
+        src="./images/electrodesB.png"
+        title="Current Electrode"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 15rem;
+    top: 22rem;
+    width: 18%;
+
+        "
+        src="./images/electrodes_M.png"
+        title="Potential Electrode"
+      />
+      <img
+        style="
+          position: absolute;
+          left: 15rem;
+    top: 23rem;
+    width: 18%;
+
+        "
+        src="./images/electrodes_N.png"
+        title="Potential Electrode"
+      /> -->
+    <!-- <img style="position:absolute; left:430px; top:225px; max-width:250px;width:100%;" title="trowel,levelling rod, weighing balance"  src="images/2.png" /> -->
+    <!-- <img style="position:absolute; left:365px; top:265px; width:70px;" title="cylindrical mould" src="images/3.png" /> -->
+    <img style="position:absolute; left:0px; top:170px;max-width:18%;width:100%;transform: rotateY(180deg)" src="images/man.png" />
+    <br>&nbsp;<span class="tooltip" style="border-bottom:1px dotted ; color:red;text-align:justify; top: -14px;">Description
+        <span class="tooltiptext">
+            <p><strong style="color:red"> Georesistivity Test:</strong> The electrical resistivity test is
+              useful for studying the existence of subsurface structures by observing the differences in
+              their resistance to electrical current flow and hence determining the presence of
+              groundwater.</p>
+            <!-- <p><strong style="color:red">Impact value of aggregate</strong>: is a measure of resistance to sudden impact or shock, which may differ from its resistance to gradually applied compressive load.</p> -->
+        </span>
+        </span>
+    </div>
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+      <strong class="incanvas">STEP</strong>
+      <!-- <span class="circlebg">&nbsp;1&nbsp;</span> -->
+      <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span>
+      <p class="steptext" id="pumptext">&nbsp;To conduct the geo-resistivity survey for the determination of ground water level in the selected location.</p>
+
+      <!-- <img
+      id="lat-lon"
+          style="
+            position: absolute;
+
+            left: 0rem;
+  top: 2rem;
+  width: 96%;
+
+          "
+          src="./images/lat-lon.jpg"
+          title=""
+
+        /> -->
+
+
+        <!--The value of the images does not depend on the value of the magic. And yes it is a magic.-->
+        <img
+        id="loc3"
+            style="
+              position: absolute;
+
+              left: 1rem;
+    top: 3rem;
+	width: 93%;
+
+            "
+             onmouseover="showContent('hide1')"
+             onmouseleave="hideContent('hide1')"
+            src="./images/loc1.png"
+            title=""
+
+          />
+          <div id="hide1" style="position: absolute; color: black;     top: 197px;
+          left: 238px;
+          visibility: hidden;
+          width: 204px;border: 1px solid black; border-radius: 5px; padding: 5px; font-size: 14px; background-color: white;">
+
+            <p id="text3">12°48'3.37"N 76°22'47.08"E</p>
+          </div>
+
+          <!-- <p id="textm" style="position: absolute;     top: 277px;
+          left:339px;
+          color: white;
+          width: 400px;
+          font-size: 14px; visibility: hidden;">
+           20m</p> -->
+
+
+
+      </div>
+
+
+      <div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+        <strong id="titlestep" class="incanvas">STEP &nbsp;</strong>
+        <span class="circlebg" id="stepnumber">&nbsp;2&nbsp;</span>
+        <p id="pumptext-2" class="steptext">&nbsp; Measure the distance of 20 m and then place the electrodes.</p>
+        <!-- <p id="source" style="position: absolute;top: 440px;left: 10px;color:white;width:400px;font-size:13px; visibility: hidden;">
+          Source:NITK, Surathkal <br>Campus</p> -->
+          <img id="ground" style="position: absolute; left: 12px;
+          top: 66px;
+          width: 651px;visibility: hidden;" src="Images/ground1.jpg">
+          <img
+          id="loc4"
+              style="
+                position: absolute;
+
+                left: 0rem;
+    top: 2rem;
+    width: 97%;
+
+              "
+               onmouseover="showContent('hide1')"
+               onmouseleave="hideContent('hide1')"
+              src="./images/10.png"
+              title=""
+
+            />
+
+<!-- <canvas id="myCanvas" width="400" height="200" style="    position: absolute;
+    left: 42px;
+    top: 144px;
+    color: white;
+    width: 718px;"></canvas> -->
+    <p id="textms" style="position: absolute;        top: 277px;
+    left: 79px;
+    color: white;
+    width: 400px;
+    font-size: 14px; visibility: hidden;">
+          Start point </p>
+          <p id="textme" style="position: absolute;     top: 277px;
+          left: 570px;
+          color: white;
+          width: 400px;
+          font-size: 14px; visibility: hidden;">
+            End point</p>
+            <!-- <p id="textm20" style="position: absolute;     top: 277px;
+            left:339px;
+            color: white;
+            width: 400px;
+            font-size: 14px; visibility: hidden;"> -->
+             <!-- 20m</p> -->
+             <img id="m1" style="position: absolute;     left: 215px;
+             top: 312px;
+             width: 55px;visibility: hidden;" src="Images/scale20cm.png">
+
+
+      </div>
+      <div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;3&nbsp;</span>
+        <p class="steptext">&nbsp;Hit on the current and potential electrodes using hammer and then connect the resistivity meter to the electrodes and record the resistivity values. </p>
+        <!-- <img id="ground1" style="position: absolute;    left: 3px;
+    top: 66px;
+    width: 681px;visibility: hidden;" src="Images/back1.png"> -->
+    <img id="ground1" style="position: absolute;    left: 3px;
+    top: 150px;
+    width: 709px;
+    transform: rotateX(47deg);
+    height: 426px;visibility: hidden;" src="Images/back1.png">
+    <!-- <div id="g11" style="position: absolute; background-color: brown; width: 500px;top: 50px;left: 50px;"></div> -->
+        <img id="loc31" style="position: absolute;left: 10px; width:auto;top: 353px;" width="145" height="145" onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/loc31.jpg" alt="">
+
+        <img id="res1" style="position: absolute;left: 245px; width:272px;top: 329px;visibility: hidden;" src="images/fullsetup.png" alt="">
+        <img id="res2" style="position: absolute;left: 245px; width:272px;top: 329px;visibility: hidden;" src="images/swtichON.png" alt="">
+        <img id="on" style="position: absolute;left: 390px;
+        width: 13px;
+        top: 441px;
+
+    visibility: hidden;" src="images/switch.png" alt="">
+        <img id="hand1" style="position: absolute;     left: 387px;
+            width: 30px;
+        top: 445px;
+        visibility: hidden;" src="images/hand.png" alt="">
+
+        <img id="spool1" style="position: absolute;  left: 165px;
+        top: 180px;
+        height: 250px;
+       visibility: hidden;" src="images/spool1.png" alt="">
+        <img id="spool2" style="position: absolute;     left: 314px;
+            height: 252px;
+        top: 178px;
+        visibility: hidden;" src="images/spool2.png" alt="">
+
+        <img id="spool3" style="position: absolute;     left: 414px;
+            height: 252px;
+        top: 179px;
+        visibility: hidden;" src="images/spool3.png" alt="">
+        <img id="spool4" style="position: absolute;    left: 481px;
+        height: 247px;
+        top: 176px;
+        visibility: hidden;" src="images/spool4.png" alt="">
+        <p id="text0.5" style="position: absolute;left: 315px;
+        top: 218px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><---0.5m---></p>
+        <p id="text11" style="position: absolute;left: 162px;top: 247px;color: rgb(255, 255, 255);text-align: center;visibility:hidden">&lt;--------------------------1 m------------------------&gt;</p>
+
+        <img id="eleA"class="elect" style="position: absolute;left: 167px;
+        width: 4px;
+        top: 112px;" src="images/electrodesA.png" alt="Current Electrode" title="Current Electrode A">
+        <img id="eleB"class="elect" style="position: absolute;left: 572px;
+        width: 4px;
+        top: 112px;" src="images/electrodesB.png" alt="Current Electrode"title="Current Electrode B">
+        <img id="eleM"class="elect" style="position: absolute;left: 317px;
+        width: 4px;
+        top: 112px;" src="images/electrodesM .png" alt="Potential Electrode"title="Potential Electrode M">
+        <img id="eleN"class="elect" style="position: absolute;left: 418px;
+        width: 4px;
+        top: 112px;" src="images/electrodesN.png" alt="Potential Electrode"title="Potential Electrode N">
+        <img id="ham1" style="position: absolute;left: 172px;
+        width: 40px;
+        top: 94px;visibility: hidden;" src="images/geohammer.png" alt="">
+        <img id="ham2" style="position: absolute;left: 323px;
+        width: 40px;
+        top: 94px;visibility: hidden;" src="images/geohammer.png" alt="">
+        <img id="ham3" style="position: absolute;left: 423px;
+        width: 40px;
+        top: 94px;visibility: hidden;" src="images/geohammer.png" alt="">
+ <img id="ham4" style="position: absolute;left: 575px;
+ width: 40px;
+ top: 94px;visibility: hidden;" src="images/geohammer.png" alt="">
+       <img id="paper1" style="position: absolute;    left: 421px;
+       width: 141px;
+       height: 40px;
+       top: 388px;visibility: hidden;" src="images/paper.png" alt="">
+       <p id="val1" style="position: absolute;    left: 496px;
+       top: 385px;
+       color: rgb(0, 0, 0);
+       text-align: center;
+       font-size: 14px;visibility:hidden">16.800</p>
+        </div>
+        <div class="simsubscreen" id="canvas4" style="visibility:hidden;">
+          <h4 id="d1" style="position: absolute; left: 338px;
+          top: 150px; color: grey; text-align: center; justify-content: center; visibility: hidden;">Hover on each dot to know the distance between electrodes.</h4>
+          <strong class="incanvas">STEP</strong>
+          <span class="circlebg">&nbsp;4&nbsp;</span>
+          <p class="steptext">&nbsp;Continue the survey by changing the spacing of the electrodes.</p><br>
+          <!-- <span class="tooltip" style=" color:red;left: 14px; top: 0px; padding:  3px;width: 20%;">
+            <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:242px; margin-top: 20px; margin-left: -17px; "><b>Formula Used in Calculations</b></p>
+            <span class="tooltiptext"style="width:436px; top:19px;left: 230px;height:273px;padding: 12px;">
+            <p style="position: absolute; padding: 6px;">&#961;<sub>a</sub>= Apparent resistivity<br><br>  K = Hydraulic conductivity<br><br> &delta;v = potential difference measured between the potential electrodes M and N <br><br> I = Electric current injected into the current electrodes A and B <br><br> S = Spacing between current electrodes A and B <br><br> a = Spacing between potential electrodes M and N</p></span></span> -->
+          <img
+          id="loc311"
+              style="
+                position: absolute;
+                left: -44px;
+    top: 35px;
+    width: 396px;
+                visibility: hidden;
+              "
+              src="./images/11.png"
+              title=""
+
+            />
+            <p id="cord1" style="position: absolute;top: 21px;
+            left: 46px;
+            color: black;
+            width: 4px;
+            font-size: 11px; visibility: hidden;">
+         77&deg;22'39"E </p>
+         <p id="cord2" style="position: absolute; top: 21px;
+         left: 179px;
+         color: black;
+         width: 4px;
+         font-size: 11px;visibility: hidden;">
+         77&deg;22'40"E </p>
+         <p id="cord3" style="position: absolute;         top: 89px;
+         left: 310px;
+         color: black;
+
+         rotate: 90deg;
+         font-size: 11px; visibility: hidden;">
+         12&deg;48'20"N </p>
+         <p id="cord4" style="position: absolute;         top: 189px;
+         left: 310px;
+         color: black;
+
+         rotate: 90deg;
+         font-size: 11px;  visibility: hidden;">
+        12&deg;48'20"N </p>
+         <p id="cord5" style="position: absolute; top: 293px;
+         left: 179px;
+         color: black;
+         width: 4px;
+         font-size: 11px;visibility: hidden;">
+         77&deg;22'40"E </p>
+         <p id="cord6" style="position: absolute;top: 293px;
+         left: 46px;
+         color: black;
+         width: 4px;
+         font-size: 11px; visibility: hidden;">
+         77&deg;22'39"E </p>
+         <p id="cord7" style="position: absolute;         top: 89px;
+         left: -75px;
+         color: black;
+
+         rotate: 270deg;
+         font-size: 11px; visibility: hidden;">
+          12&deg;48'20"N  </p>
+         <p id="cord8" style="position: absolute;         top: 189px;
+         left: -75px;
+         color: black;
+
+         rotate: 270deg;
+         font-size: 11px;  visibility: hidden;">
+           12&deg;48'20"N </p>
+            <!-- <img
+            id="loc312"
+                style="
+                  position: absolute;
+                  left: 76px;
+    top: 56px;
+    width: 544px;
+                  visibility: hidden;
+                "
+                src="./images/loc312.png"
+                title=""
+
+              />
+              <img
+            id="loc313"
+                style="
+                  position: absolute;
+                  left: 76px;
+    top: 56px;
+    width: 544px;
+                  visibility: hidden;
+                "
+                src="./images/loc313.png"
+                title=""
+
+              /> -->
+              <img class="elect, highlight-button"
+              id="dot1"
+                  style="
+                    position: absolute;
+                    left: -12px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line1', 'line2', 'p1', 1)"
+                   onmouseleave="toggleContent('iso1', 'line1', 'line2', 'p1')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect,  highlight-button"
+                id="dot2"
+                    style="
+                      position: absolute;
+                      left: -1px;
+    top: 179px;
+      width: 9px;
+                      visibility: hidden;
+                    "
+                     onmouseover="toggleContent('iso1', 'line3', 'line4', 'p2', 2)"
+                     onmouseleave="toggleContent('iso1', 'line3', 'line4', 'p2')"
+                    src="./images/dot.png"
+                    title=""
+
+                  />
+                  <img class="elect"
+                  id="dot3"
+                      style="
+                        position: absolute;
+                        left: 11px;
+    top: 179px;
+        width: 9px;
+                        visibility: hidden;
+                      "
+                       onmouseover="toggleContent('iso1', 'line5', 'line6', 'p3', 3)"
+                       onmouseleave="toggleContent('iso1', 'line5', 'line6', 'p3')"
+                      src="./images/dot.png"
+                      title=""
+
+                    />
+                    <img class="elect"
+              id="dot4"
+                  style="
+                    position: absolute;
+                    left: 22px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line7', 'line8', 'p4', 4)"
+                   onmouseleave="toggleContent('iso1', 'line7', 'line8', 'p4')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot5"
+                  style="
+                    position: absolute;
+                    left: 34px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line9', 'line10', 'p5', 5)"
+                   onmouseleave="toggleContent('iso1', 'line9', 'line10', 'p5')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot6"
+                  style="
+                    position: absolute;
+                    left: 46px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line11', 'line12', 'p6', 6)"
+                   onmouseleave="toggleContent('iso1', 'line11', 'line12', 'p6')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot7"
+                  style="
+                    position: absolute;
+                    left: 59px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line13', 'line14', 'p7', 7)"
+                   onmouseleave="toggleContent('iso1', 'line13', 'line14', 'p7')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot8"
+                  style="
+                    position: absolute;
+                    left: 71px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line15', 'line16', 'p8',8)"
+                   onmouseleave="toggleContent('iso1', 'line15', 'line16', 'p8')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot9"
+                  style="
+                    position: absolute;
+                    left: 83px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line17', 'line18', 'p9',9)"
+                   onmouseleave="toggleContent('iso1', 'line17', 'line18', 'p9')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot10"
+                  style="
+                    position: absolute;
+                    left: 95px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line19', 'line20', 'p10',10 )"
+                   onmouseleave="toggleContent('iso1', 'line19', 'line20', 'p10')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot11"
+                  style="
+                    position: absolute;
+                    left: 106px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line21', 'line22', 'p11', 11)"
+                   onmouseleave="toggleContent('iso1', 'line21', 'line22', 'p11')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot12"
+                  style="
+                    position: absolute;
+                    left: 117px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line23', 'line24', 'p12', 12)"
+                   onmouseleave="toggleContent('iso1', 'line23', 'line24', 'p12')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot13"
+                  style="
+                    position: absolute;
+                    left: 128px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line25', 'line26', 'p13', 13)"
+                   onmouseleave="toggleContent('iso1', 'line25', 'line26', 'p13')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot14"
+                  style="
+                    position: absolute;
+                    left: 139px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line27', 'line28', 'p14', 14)"
+                   onmouseleave="toggleContent('iso1', 'line27', 'line28', 'p14')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot15"
+                  style="
+                    position: absolute;
+                    left: 150px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line29', 'line30', 'p15', 15)"
+                   onmouseleave="toggleContent('iso1', 'line29', 'line30', 'p15')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot16"
+                  style="
+                    position: absolute;
+                    left: 161px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line31', 'line32', 'p16', 16)"
+                   onmouseleave="toggleContent('iso1', 'line31', 'line32', 'p16')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot17"
+                  style="
+                    position: absolute;
+                    left: 172px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line33', 'line34', 'p17', 17)"
+                   onmouseleave="toggleContent('iso1', 'line33', 'line34', 'p17')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot18"
+                  style="
+                    position: absolute;
+                    left: 183px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line35', 'line36', 'p18', 18)"
+                   onmouseleave="toggleContent('iso1', 'line35', 'line36', 'p18')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot19"
+                  style="
+                    position: absolute;
+                    left: 194px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line37', 'line38', 'p19', 19)"
+                   onmouseleave="toggleContent('iso1', 'line37', 'line38', 'p19')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot20"
+                  style="
+                    position: absolute;
+                    left: 206px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line39', 'line40', 'p20', 20)"
+                   onmouseleave="toggleContent('iso1', 'line39', 'line40', 'p20')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+
+                <img class="elect"
+              id="dot21"
+                  style="
+                    position: absolute;
+                    left: 218px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line41', 'line42', 'p21', 21)"
+                   onmouseleave="toggleContent('iso1', 'line41', 'line42', 'p21')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot22"
+                  style="
+                    position: absolute;
+                    left: 229px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line43', 'line44', 'p22', 22)"
+                   onmouseleave="toggleContent('iso1', 'line43', 'line44', 'p22')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot23"
+                  style="
+                    position: absolute;
+                    left: 240px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line45', 'line46', 'p23', 23)"
+                   onmouseleave="toggleContent('iso1', 'line45', 'line46', 'p23')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot24"
+                  style="
+                    position: absolute;
+                    left: 251px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line47', 'line48', 'p24', 24)"
+                   onmouseleave="toggleContent('iso1', 'line47', 'line48', 'p24')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot25"
+                  style="
+                    position: absolute;
+                    left: 262px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line49', 'line50', 'p25', 25)"
+                   onmouseleave="toggleContent('iso1', 'line49', 'line50', 'p25')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot26"
+                  style="
+                    position: absolute;
+                    left: 274px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line51', 'line52', 'p26', 26)"
+                   onmouseleave="toggleContent('iso1', 'line51', 'line52', 'p26')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot27"
+                  style="
+                    position: absolute;
+                    left: 285px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line53', 'line54', 'p27', 27)"
+                   onmouseleave="toggleContent('iso1', 'line53', 'line54', 'p27')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <img class="elect"
+              id="dot28"
+                  style="
+                    position: absolute;
+                    left: 296px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso1', 'line55', 'line56', 'p28', 28)"
+                   onmouseleave="toggleContent('iso1', 'line55', 'line56', 'p28')"
+                  src="./images/dot.png"
+                  title=""
+
+                />
+                <!-- <img class="elect"
+              id="dot29"
+                  style="
+                    position: absolute;
+                    left: 289px;
+    top: 179px;
+    width: 9px;
+                    visibility: hidden;
+                  "
+                   onmouseover="toggleContent('iso29', 'line57', 'line58')"
+                   onmouseleave="toggleContent('iso29', 'line57', 'line58')"
+                  src="./images/dot.png"
+                  title=""
+
+                /> -->
+
+
+                <img
+            id="iso1"
+                style="
+                  position: absolute;
+                  left: 356px;
+    top: 44px;
+    width: 362px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="p1"
+              style="
+                position: absolute;
+                left: -12px;
+top: 139px;
+width: 9px;
+color: white;
+                visibility: hidden;
+              ">1</p>
+               <p id="p2"
+               style="
+                 position: absolute;
+                 left: -1px;
+ top: 139px;
+ width: 9px;
+ color: white;
+                 visibility: hidden;
+               ">2</p>
+                <p id="p3"
+                style="
+                  position: absolute;
+                  left: 11px;
+  top: 139px;
+  width: 9px;
+  color: white;
+                  visibility: hidden;
+                ">3</p>
+                 <p id="p4"
+                 style="
+                   position: absolute;
+                   left: 22px;
+   top: 139px;
+   width: 9px;
+   color: white;
+                   visibility: hidden;
+                 ">4</p>
+                  <p id="p5"
+                  style="
+                    position: absolute;
+                    left: 34px;
+    top: 139px;
+    width: 9px;
+    color: white;
+                    visibility: hidden;
+                  ">5</p>
+                   <p id="p6"
+                   style="
+                     position: absolute;
+                     left: 46px;
+     top: 139px;
+     width: 9px;
+     color: white;
+                     visibility: hidden;
+                   ">6</p>
+                    <p id="p7"
+                    style="
+                      position: absolute;
+                      left: 59px;
+      top: 139px;
+      width: 9px;
+      color: white;
+                      visibility: hidden;
+                    ">7</p>
+                     <p id="p8"
+                     style="
+                       position: absolute;
+                       left: 71px;
+       top: 139px;
+       width: 9px;
+       color: white;
+                       visibility: hidden;
+                     ">8</p>
+                      <p id="p9"
+                      style="
+                        position: absolute;
+                        left: 83px;
+        top: 139px;
+        width: 9px;
+        color: white;
+                        visibility: hidden;
+                      ">9</p>
+                       <p id="p10"
+                       style="
+                         position: absolute;
+                         left: 95px;
+         top: 139px;
+         width: 9px;
+         color: white;
+                         visibility: hidden;
+                       ">10</p>
+                        <p id="p11"
+                        style="
+                          position: absolute;
+                          left: 106px;
+          top: 139px;
+          width: 9px;
+          color: white;
+                          visibility: hidden;
+                        ">11</p>
+                         <p id="p12"
+                         style="
+                           position: absolute;
+                           left: 117px;
+           top: 139px;
+           width: 9px;
+           color: white;
+                           visibility: hidden;
+                         ">12</p>
+                          <p id="p13"
+                          style="
+                            position: absolute;
+                            left: 128px;
+            top: 139px;
+            width: 9px;
+            color: white;
+                            visibility: hidden;
+                          ">13</p>
+                           <p id="p14"
+                           style="
+                             position: absolute;
+                             left: 139px;
+             top: 139px;
+             width: 9px;
+             color: white;
+                             visibility: hidden;
+                           ">14</p>
+                            <p id="p15"
+                            style="
+                              position: absolute;
+                              left: 150px;
+              top: 139px;
+              width: 9px;
+              color: white;
+                              visibility: hidden;
+                            ">15</p>
+                             <p id="p16"
+                             style="
+                               position: absolute;
+                               left: 161px;
+               top: 139px;
+               width: 9px;
+               color: white;
+                               visibility: hidden;
+                             ">16</p>
+                              <p id="p17"
+                              style="
+                                position: absolute;
+                                left: 172px;
+                top: 139px;
+                width: 9px;
+                color: white;
+                                visibility: hidden;
+                              ">17</p>
+                               <p id="p18"
+                               style="
+                                 position: absolute;
+                                 left: 183px;
+                 top: 139px;
+                 width: 9px;
+                 color: white;
+                                 visibility: hidden;
+                               ">18</p>
+                                <p id="p19"
+                                style="
+                                  position: absolute;
+                                  left: 194px;
+                  top: 139px;
+                  width: 9px;
+                  color: white;
+                                  visibility: hidden;
+                                ">19</p>
+                                 <p id="p20"
+                                 style="
+                                   position: absolute;
+                                   left: 206px;
+                   top: 139px;
+                   width: 9px;
+                   color: white;
+                                   visibility: hidden;
+                                 ">20</p>
+                                  <p id="p21"
+                                  style="
+                                    position: absolute;
+                                    left: 218px;
+                    top: 139px;
+                    width: 9px;
+                    color: white;
+                                    visibility: hidden;
+                                  ">21</p>
+                                   <p id="p22"
+                                   style="
+                                     position: absolute;
+                                     left: 229px;
+                     top: 139px;
+                     width: 9px;
+                     color: white;
+                                     visibility: hidden;
+                                   ">22</p>
+                                    <p id="p23"
+                                    style="
+                                      position: absolute;
+                                      left: 240px;
+                      top: 139px;
+                      width: 9px;
+                      color: white;
+                                      visibility: hidden;
+                                    ">23</p>
+                                     <p id="p24"
+                                     style="
+                                       position: absolute;
+                                       left: 251px;
+                       top: 139px;
+                       width: 9px;
+                       color: white;
+                                       visibility: hidden;
+                                     ">24</p>
+                                      <p id="p25"
+                                      style="
+                                        position: absolute;
+                                        left: 262px;
+                        top: 139px;
+                        width: 9px;
+                        color: white;
+                                        visibility: hidden;
+                                      ">25</p>
+                                       <p id="p26"
+                                       style="
+                                         position: absolute;
+                                         left: 274px;
+                         top: 139px;
+                         width: 9px;
+                         color: white;
+                                         visibility: hidden;
+                                       ">26</p>
+                                        <p id="p27"
+                                        style="
+                                          position: absolute;
+                                          left: 285px;
+                          top: 139px;
+                          width: 9px;
+                          color: white;
+                                          visibility: hidden;
+                                        ">27</p>
+                                         <p id="p28"
+                                         style="
+                                           position: absolute;
+                                           left: 296px;
+                           top: 139px;
+                           width: 9px;
+                           color: white;
+                                           visibility: hidden;
+                                         ">28</p>
+
+              <p id="line1" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><-0.5m-></p>
+              <p id="line2" style="position: absolute;left: 392px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;-------------------1 m-----------------&gt;</p>
+
+
+
+
+                <img
+            id="iso2"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line3" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><-0.5m-></p>
+              <p id="line4"style="position: absolute;left: 392px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;-------------------3 m-----------------&gt;</p>
+
+
+              <img
+            id="iso3"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line5"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><-0.5m-></p>
+              <p id="line6" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;-------------------7 m-----------------&gt;</p>
+
+
+
+              <img
+            id="iso4"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line7"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><-0.5m-></p>
+              <p id="line8"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------10 m------------------&gt;</p>
+
+
+
+              <img
+            id="iso5"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line9"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--2m--></p>
+              <p id="line10" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------10 m------------------&gt;</p>
+
+
+
+              <img
+            id="iso6"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line11"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--2m--></p>
+              <p id="line12" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------20 m------------------&gt;</p>
+
+
+              <img
+            id="iso7"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line13" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--2m--></p>
+              <p id="line14"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------30 m------------------&gt;</p>
+
+
+              <img
+            id="iso8"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line15"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line16"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------30 m------------------&gt;</p>
+
+
+              <img
+            id="iso9"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line17"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line18" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------40 m------------------&gt;</p>
+
+
+              <img
+            id="iso10"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line19"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line20"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------50m------------------&gt;</p>
+
+
+              <img
+            id="iso11"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line21" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line22" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------60m------------------&gt;</p>
+
+
+              <img
+            id="iso12"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line23"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line24" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------70 m------------------&gt;</p>
+
+
+              <img
+            id="iso13"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line25"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line26" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------80 m------------------&gt;</p>
+
+
+              <img
+            id="iso14"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line27"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line28"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------90 m------------------&gt;</p>
+
+
+              <img
+            id="iso15"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line29"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--5m--></p>
+              <p id="line30"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------100m------------------&gt;</p>
+
+
+              <img
+            id="iso16"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line31" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--10m-></p>
+              <p id="line32" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------100m------------------&gt;</p>
+
+
+              <img
+            id="iso17"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line33"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--10m-></p>
+              <p id="line34"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------110m------------------&gt;</p>
+
+
+              <img
+            id="iso18"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line35"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--10m-></p>
+              <p id="line36" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------120m------------------&gt;</p>
+
+
+              <img
+            id="iso19"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line37"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--10m-></p>
+              <p id="line38" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------130m------------------&gt;</p>
+
+
+              <img
+            id="iso20"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line39"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--10m-></p>
+              <p id="line40"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------140m------------------&gt;</p>
+
+
+              <img
+            id="iso21"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line41"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--10m-></p>
+              <p id="line42"style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------150m------------------&gt;</p>
+
+
+
+              <img
+            id="iso22"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line43" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+              <p id="line44" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------150m------------------&gt;</p>
+
+
+              <img
+            id="iso23"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line45" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+              <p id="line46" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------170m------------------&gt;</p>
+
+
+              <img
+            id="iso24"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line47"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+              <p id="line48" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------190m------------------&gt;</p>
+
+
+              <img
+            id="iso25"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line49" style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+              <p id="line50" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------210m------------------&gt;</p>
+
+
+              <img
+            id="iso26"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line51"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+              <p id="line52" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------230m------------------&gt;</p>
+
+
+              <img
+            id="iso27"
+                style="
+                  position: absolute;
+                  left: 353px;
+    top: 44px;
+    width: 378px;
+                  visibility: hidden;
+                "
+                src="./images/iso.PNG"
+                title=""
+
+              />
+              <p id="line53"  style="position: absolute;    left: 495px;
+              font-size: 13px;
+              top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+              <p id="line54" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------250m------------------&gt;</p>
+
+              <img
+              id="iso28"
+                  style="
+                    position: absolute;
+                    left: 353px;
+      top: 44px;
+      width: 378px;
+                    visibility: hidden;
+                  "
+                  src="./images/iso.PNG"
+                  title=""
+
+                />
+                <p id="line55" style="position: absolute;    left: 495px;
+                font-size: 13px;
+                top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><--20m-></p>
+                <p id="line56" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------270m------------------&gt;</p>
+
+
+                <img
+                id="iso29"
+                    style="
+                      position: absolute;
+                      left: 353px;
+        top: 44px;
+        width: 378px;
+                      visibility: hidden;
+                    "
+                    src="./images/iso.PNG"
+                    title=""
+
+                  />
+                  <p id="line57" style="position: absolute;    left: 495px;
+                  font-size: 13px;
+                  top: 142px;color: rgb(255, 255, 255);text-align: center;visibility:hidden"><-0.5m-></p>
+                  <p id="line58" style="position: absolute;left: 390px;top: 158px;font-size: 14px;color: rgb(255, 255, 255);text-align: center;visibility: hidden;">&lt;----------------1 m------------------&gt;</p>
+
+
+
+            <div id="progressBar" style="position: absolute;top: 417px;left: -5px;color:#e7e0e0;display:none;">
+              <label for="file" id="progress-label">Processing Data:</label>
+              <progress id="file" value="0" max="100"> 32% </progress>
+            </div>
+            <div id="tab22-1">
+              <table id="tab2-1"  style="text-align:center;font-size:14px;">
+                <thead id="thead1">
+                  <!-- <tr>
+                    <th id="" style="padding:10px;">NO</th>
+                    <th id="" style="padding:10px;">AB/2(m)</th>
+                    <th id="" style="padding:10px;">MN/2(m)</th>
+                    <th id="" style="padding:10px;">V(v)</th>
+                    <th id="" style="padding:10px;">I(A)</th>
+                    <th id="" style="padding:10px;">R(ohm)</th>
+                    <th id="" style="padding: 10px;">K(m)</th>
+                  </tr> -->
+                </thead>
+                <tbody id="tab2-body" ></tbody>
+              </table>
+            </div>
+
+        </div>
+        <div class="simsubscreen" id="canvas5" style="visibility:hidden;">
+          <strong class="incanvas">STEP</strong>
+          <span class="circlebg">&nbsp;5&nbsp;</span>
+          <p class="steptext">&nbsp;Calculate the apparent resistivity of the soil using the readings from each location.</p>
+          <br>
+
+
+          <span class="tooltip" style=" color:red;left: 14px; top: -12px;padding: 3px;width: 20%;">
+            <p style="border-bottom:1px dotted ; color:red;text-align:justify; width:242px; margin-top: 20px; margin-left: -17px; "><b>Variables Used in Calculations</b></p>
+            <span class="tooltiptext"style="width:359px; top:19px;left: 230px;height:170px;padding: 0px;">
+            <p style="position: absolute; padding: 6px;">AB= Distance between the current electrodes<br><br>MN = Distance between the potential electrode<br><br> Resistivity= Value from the resistivity meter <br><br>K= Hydraulic conductivity</p></span></span>
+            <br>
+
+
+
+
+
+
+            <p id="form" style="position:absolute; left:4px;font-size: 14px; top:50px;font-weight: bold; visibility:hidden">
+
+              <span >K = 3.14*(
+                <span class="frac">
+                <sup>
+                  <span class="frac1" > (<span class="frac"><sup>AB</sup><sub>2 </sub></span>)<sup>2</sup>- (<span class="frac"><sup>MN</sup><span>&frasl;</span><sub>2</sub></span>)<sup>2</sup><sup></sup></span>
+                </sup>
+
+                <sub>
+                  (2*<span class="frac"><sup>MN</sup><sub>2 </sub></span>)
+                </sub>
+
+              </span>
+              )
+              </span></p>
+
+              <p id="form2" style="position:absolute; left:322px;font-size: 14px; top:74px;font-weight: bold; visibility:hidden">Apparent Resistivity= K * Resistivity</p>
+
+          <div id="5-1" style="position: absolute; left: 49px; top: 139px; height: 343px; width: 633px; overflow-y: scroll;border: 1px solid black; visibility: hidden;">
+            <table style="position: absolute; font-size: 14px; border: 0px solid black;text-align: center;">
+
+                    <tr>
+                        <th style="text-align: center; font-family: verdana; font-size: 14px;  padding-left: 15px;padding-right: 15px;">Sl.No</th>
+                        <th style="text-align: center; font-family: verdana; font-size: 14px; padding-left: 15px;padding-right: 15px;">MN/2(m)</th>
+                        <th style="text-align: center; font-family: verdana; font-size: 14px; padding-left: 15px;padding-right: 15px;">AB/2(m)</th>
+
+                        <th style="text-align: center; font-family: verdana; font-size: 14px; padding-left: 15px;padding-right: 15px;">K</th>
+                        <th style="text-align: center; font-family: verdana; font-size: 14px; padding-left: 15px;padding-right: 15px;">Resistivity(ohm-m)</th>
+                        <th style="text-align: center; font-family: verdana; font-size: 14px; padding-left: 15px;padding-right: 15px;">Apparent resistivity</th>
+                    </tr>
+
+
+
+                  <tr>
+                    <td>1</td>
+                    <td>0.5</td>
+                    <td>1</td>
+
+                    <td>2</td>
+                    <td>16.800</td>
+                    <td><input type="text" class="values" id="gi-1" style="font-weight: bold; text-align: center;"></input></td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>0.5</td>
+                    <td>3</td>
+
+                    <td>27</td>
+                    <td>1.250</td>
+                    <td><input type="text" class="values" id="gi-2"style="font-weight: bold; text-align: center;"></input></td>
+
+                </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>0.5</td>
+                    <td>7</td>
+
+                    <td>153</td>
+                    <td>1.650</td>
+                    <td><input type="text" class="values" id="gi-3"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>0.5</td>
+                    <td>10</td>
+
+                    <td>313</td>
+                    <td>1.210</td>
+                    <td><input type="text" class="values" id="gi-4"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>10</td>
+
+                    <td>75</td>
+                    <td>1.680</td>
+                    <td><input type="text" class="values" id="gi-5"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>20</td>
+
+                    <td>311</td>
+                    <td>1.230</td>
+                    <td><input type="text" class="values" id="gi-6"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>30</td>
+
+                    <td>703</td>
+                    <td>0.937</td>
+                    <td><input type="text" class="values" id="gi-7"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>30</td>
+
+                    <td>275</td>
+                    <td>2.090</td>
+                    <td><input type="text" class="values" id="gi-8"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>5</td>
+                    <td>40</td>
+
+                    <td>495</td>
+                    <td>1.590</td>
+                    <td><input type="text" class="values" id="gi-9"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>50</td>
+
+                    <td>777</td>
+                    <td>1.410</td>
+                    <td><input type="text" class="values" id="gi-10"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>5</td>
+                    <td>60</td>
+
+                    <td>1123</td>
+                    <td>1.280</td>
+                    <td><input type="text" class="values" id="gi-11"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>5</td>
+                    <td>70</td>
+
+                    <td>1531</td>
+                    <td>1.165</td>
+                    <td><input type="text" class="values" id="gi-12"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>5</td>
+                    <td>80</td>
+
+                    <td>2002</td>
+                    <td>1.017</td>
+                    <td><input type="text" class="values" id="gi-13"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>90</td>
+
+                    <td>2536</td>
+                    <td>2.370</td>
+                    <td><input type="text" class="values" id="gi-14"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>5</td>
+                    <td>100</td>
+
+                    <td>3132</td>
+                    <td>1.860</td>
+                    <td><input type="text" class="values" id="gi-15"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>10</td>
+                    <td>100</td>
+
+                    <td>1554</td>
+                    <td>1.700</td>
+                    <td><input type="text" class="values" id="gi-16"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>10</td>
+                    <td>110</td>
+
+                    <td>1884</td>
+                    <td>1.039</td>
+                    <td><input type="text" class="values" id="gi-17"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>10</td>
+                    <td>120</td>
+
+                    <td>2245</td>
+                    <td>0.738</td>
+                    <td><input type="text" class="values" id="gi-18"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>10</td>
+                    <td>130</td>
+
+                    <td>2638</td>
+                    <td>0.576</td>
+                    <td><input type="text" class="values" id="gi-19"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>140</td>
+
+                    <td>3062</td>
+                    <td>0.468</td>
+                    <td><input type="text" class="values" id="gi-20"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>21</td>
+                    <td>10</td>
+                    <td>150</td>
+
+                    <td>3517</td>
+                    <td>0.370</td>
+                    <td><input type="text" class="values" id="gi-21"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>22</td>
+                    <td>20</td>
+                    <td>150</td>
+
+                    <td>1735</td>
+                    <td>0.961</td>
+                    <td><input type="text" class="values" id="gi-22"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>20</td>
+                    <td>170</td>
+
+                    <td>2237</td>
+                    <td>0.650</td>
+                    <td><input type="text" class="values" id="gi-23"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>20</td>
+                    <td>190</td>
+
+                    <td>2802</td>
+                    <td>0.699</td>
+                    <td><input type="text" class="values" id="gi-24"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>210</td>
+
+                    <td>3430</td>
+                    <td>0.731</td>
+                    <td><input type="text" class="values" id="gi-25"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>26</td>
+                    <td>20</td>
+                    <td>230</td>
+
+                    <td>4121</td>
+                    <td>0.875</td>
+                    <td><input type="text" class="values" id="gi-26"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>27</td>
+                    <td>20</td>
+                    <td>250</td>
+
+                    <td>4875</td>
+                    <td>0.887</td>
+                    <td><input type="text" class="values" id="gi-27"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+                  <tr>
+                    <td>28</td>
+                    <td>20</td>
+                    <td>270</td>
+
+                    <td>5691</td>
+                    <td>0.816</td>
+                    <td><input type="text" class="values" id="gi-28"style="font-weight: bold; text-align: center;"></input></td>
+                  </tr>
+
+            </table>
+        </div>
+        <button id="btn1" style="position: absolute;left: 553px;
+        top: 496px; visibility: hidden;" onclick="checkInput1()">CHECK</button>
+        <button id="resbtn1" style="position: absolute; left: 553px;
+        top: 494px; visibility:hidden;" onclick="getResult1()">RESULT</button>
+        <span id="alerttxt" class="alertmsg" style="position:absolute; left: 307px;
+        top: 496px;
+        color: red;">Please Enter Value to proceed</span>
+      </div>
+      <div class="simsubscreen" id="canvas6" style="visibility:hidden;">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;6&nbsp;</span>
+        <p class="steptext">&nbsp;Plot the resistivity graph from the given data to locate the augment ground water.</p>
+        <img
+      id="graph1"
+      style="
+        position: absolute;
+        left: 51.4px;
+    top: 5rem;
+    width: 87%;
+    height: 406px;
+        visibility: hidden;
+      "
+      src="./images/geograph3.png"
+
+    />
+    <p id="para1" style="position: absolute; visibility: hidden;    top: 213px;
+   left: -33px;
+    rotate: -90deg;">APPRES (ohm-m)</p>
+    <p id="para2" style="    position: absolute;visibility: hidden;
+    top: 459px;
+    left: 380px;">AB/2 (m)</p>
+
+      </div>
+      <div class="simsubscreen" id="canvas7" style="visibility:hidden;">
+        <h2 class="steptext" style="position: absolute; font-size :20px; ">Inference: </h2><br><br>
+        <p id="info" style="
+
+       visibility: hidden;
+    position: absolute;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: justify;
+    width: 88%;
+    top: 62px;
+    left: 20px;
+    ">The study of Vertical Electrode Sounding indicates a few saturated fractures at deeper levels. These fractures are
+          expected to get recharged from distant water bodies. The study of Vertical Electrode
+          Sounding indicates the present study area is favorable location to augment ground water. There are two prominent fractures at the depth of 158.496m and 271.272m have been identified. As the study area is located on ridgs less scope for the recharged to the identified fractures. The expected yield is around 7570.823 lph.</p>
+
+        </div>
+
+
+      </div>
+
+
+    <div id="nav">
+        <img id="nextButton" onclick="navNext()" src="images/Next.png" />
+        </div>
+        <!--Blinking Arrow	-->
+        <img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png"/>
+
+        <div id="copyright"> &copy; 2018 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+
+
+<script src="../assets/js/iframeResize.js"></script></body>
+</html>
