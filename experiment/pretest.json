@@ -2,166 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which of the following is NOT an Electronic array Geometry?",
+      "question": "Pick up the correct statement from the following:",
       "answers": {
-        "a": "Wenner Array",
-        "b": "Pole- Dipole Array",
-        "c": "Dipole-Wenner Array",
-        "d": "Schlumberger Array"
+        "a": "A confined bed of impervious material laid over an aquifer, is known as an aquiclude",
+        "b": "The top most water bearing strata having no aquifer, is known as non-artesian aquifer",
+        "c": "The ordinary gravity wells which supply water from the top most water bearing strata, are called water table wells",
+        "d": "All the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": ""
-    },
-    {
-      "question": "The unit of percolation rate of the soil is __________.",
-      "answers": {
-        "a": "Unitless",
-        "b": "g/cc",
-        "c": "ml/s",
-        "d": "cm/s"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "Which IS code is used in this experiment?",
-      "answers": {
-        "a": "IS 1199:1959",
-        "b": "IS 15736:2007",
-        "c": "IS 800:2007",
-        "d": "IS 15658:2006"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "The ground resistivity calculated from measured resistance and a geometric factor derived for the condition where the ground is homogeneous and isotropic is",
-      "answers": {
-        "a": "Resistivity",
-        "b": "True Resistivity",
-        "c": "Resistivity imaging",
-        "d": "Apparent Resistivity"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
       },
       "correctAnswer": "d",
-      "difficulty": ""
+      "difficulty": "beginner"
     },
     {
-      "question": "Which type of rock has the highest resistivity?",
+      "question": "What electrode configuration provides the greatest depth of exploration in a uniform earth?",
       "answers": {
-        "a": "Igneous rocks",
-        "b": "Sedimentary rocks",
-        "c": "Metamorphic rocks",
-        "d": "None of the above"
+        "a": "Three electrode",
+        "b": "Two electrode",
+        "c": "Wenner",
+        "d": "Schlumberger"
+      },
+      "explanations": {
+        "a": "",
+        "b": "The maximum depth of investigation in homogeneous earth is achieved through the two-electrode configuration. In this setup, one electrode serves to introduce current into the ground, while the other electrode is employed to measure the potential difference. This arrangement facilitates a deeper penetration of the electric field into the earth, consequently resulting in an increased depth of exploration. In contrast, the three-electrode configuration, as well as the Wenner and Schlumberger configurations, employ multiple electrodes, potentially constraining the depth of investigation. ",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which electrode configuration acquires maximum vertical resolution?",
+      "answers": {
+        "a": "Schlumberger",
+        "b": "Pole Dipole",
+        "c": "Half Wenner",
+        "d": "Wenner"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "The Wenner electrode configuration excels in achieving maximum vertical resolution due to its utilization of the widest electrode spacing in comparison to other alternatives. This extended spacing provides improved depth penetration capability and enhances the ability to detect subtle subsurface variations. Conversely, the Schlumberger configuration adopts the narrowest spacing, leading to diminished vertical resolution. The Pole Dipole and Half Wenner configurations feature intermediate spacing, resulting in lower vertical resolution when contrasted with the Wenner configuration."
       },
-      "correctAnswer": "a",
-      "difficulty": ""
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     },
     {
-      "question": "Which type of rocks has the lowest resistivity?",
+      "question": "The electrical Resistivity Method is generally used :",
       "answers": {
-        "a": "Igneous rocks",
-        "b": "Sedimentary rocks",
-        "c": "Metamorphic rocks",
-        "d": "None of the above"
+        "a": "In the investigation of the geological structure",
+        "b": "In engineering and groundwater investigations",
+        "c": "For tracking dykes",
+        "d": "For locating ore bodies"
+      },
+      "explanations": {
+        "a": "",
+        "b": "The Electrical Resistivity Method finds widespread application in engineering and groundwater studies. This technique revolves around the measurement of the electrical resistivity of subsurface materials, enabling the assessment of their composition and characteristics. Its utility extends to the identification of subterranean features like faults or fractures, pivotal information for engineering endeavors. Furthermore, the resistivity method aids in the detection and evaluation of groundwater reservoirs, providing insights into their volume and quality. Through the analysis of resistivity data, geologists and engineers are empowered to make well-informed choices regarding the viability and planning of construction projects while efficiently managing groundwater resources.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The depth limit in electrical sounding is:",
+      "answers": {
+        "a": "More than 300 m",
+        "b": "More than 1 km",
+        "c": "More than 5 km",
+        "d": "More than 10 km"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "The term 'limiting depth of electrical sounding' denotes the furthest depth that can be precisely assessed through this method. In this context, the accurate response is 'exceeding 10 kilometers,' signifying that electrical sounding can effectively gauge depths beyond the 10-kilometer mark"
       },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "In the Schlumberger array, the electrodes are placed at equal distances?",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "",
-        "b": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "Ohm's law states that the current through a conductor between two points is inversely proportional to the voltage across the two points.",
-      "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "",
-        "b": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "The positive terminal of the battery is known as",
-      "answers": {
-        "a": "Anode",
-        "b": "Cathode",
-        "c": "Electrode",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "The negative terminal of the battery is known as",
-      "answers": {
-        "a": "Anode",
-        "b": "Cathode",
-        "c": "Electrode",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
     }
   ]
 }

@@ -1,32 +1,31 @@
-##### These procedure steps will be followed on the simulator
+1. Click on the simulation tab of this experiment. The following window will be displayed.
+    ![Alt text](images/img1.png)
 
-1. When you click Georesistivity test file, a new window will open as shown below.<br>
-<img src="images/G1.png"><br>
+2. Place the cursor over description, the basic definition of experiment will be displayed. Click on the next button to proceed with the experiment.
+    ![Alt text](images/img2.png)
 
-2. Connect the potential elecrode to the positive side of the resistivity meter and click on the hammer.<br>
-<img src="images/G2.png"><br>
+3. Select the study area and hover on the area to know its latitude and longitude value.
+    ![Alt text](images/img3.png)
 
-3. Connect the potential elecrode to the negative side of the resistivity meter and click on the hammer. <br>
-<img src="images/G3.png"><br>
+4. Click on the measuring tape to measure the distance of 20m from the starting point to end point.
+     ![Alt text](images/img4.png)
 
-4. Connect the potential elecrode to the positive side of the resistivity meter and click on the hammer.<br>
-<img src="images/G4.png"><br>
+5. Click on each electrodes to place it in the given distance and then connect the resistivity meter to the electrode and record the resistivity values.
+    ![Alt text](images/img5.png)
 
-5. Connect the potential elecrode to the negative side of the resistivity meter and click on the hammer.<br>
-<img src="images/G5.png"><br>
+6.  Take the reading and repeat the process at multiple locations to get the representative sample of the soil.
+     ![Alt text](images/img6.png)
 
-6. Click on the hand to connect the resistivity meter to the battery. Click on the next button to proceed further.<br>
-<img src="images/G6.png"><br>
+7.  Hover on each dot to know the distance between the electrodes as well as the resistivity values.
+     ![Alt text](images/img61.png)
 
-7. click on the hand to switch on the Resistivity meter and note down the Resistance reading from the meter. Click on the next button to proceed further.<br>
-<img src="images/G7.png"><br>
+8.  Click on the next button and then place the mouse over the "Variables used in the calculation" to display all the variables and also calculate the apparent resistivity values using the table below.
+     ![Alt text](images/img7.png)
 
-8. click on the CHECK button to get the values of KR.<br>
-<img src="images/G8.png"><br>
+9. From the survey the augmented ground water can be shown via graph.
+     
+     ![Alt text](images/img8.png)
 
-9. Now click on the CHECK button to get the value of Mean Resistivty.<br>
-<img src="images/G9.png"><br>
 
-10. Now choose the final result from the dropdown. and Repeat same Procedure for trial2 and trial3. <br>
-<img src="images/G10.png"><br>
-
+10. Finally we have the inference of the experiment and reload the page to repeat the experiment.
+    ![Alt text](./images/img9.png)
