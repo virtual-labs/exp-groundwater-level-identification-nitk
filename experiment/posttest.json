@@ -2,41 +2,25 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which of the following Electronic array Geometry is used in this experiment?",
+      "question": "In the following figure which zone is interpreted as potential groundwater resources",
+      "image":"./images/pre.JPG",
       "answers": {
-        "a": "Wenner Array",
-        "b": "Pole-Dipole Array",
-        "c": "Dipole-Dipole Array",
-        "d": "Schlumberger Array"
+        "a": "3000 Ωm to &gt; 15000 Ωm (light red to dark purple)",
+        "b": "150 Ωm to 3000 Ωm (green to brown)",
+        "c": "6 Ωm to &gt; 15000 Ωm",
+        "d": "6 Ωm to 150 Ωm (dark blue to light blue)"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
+        "d": "The lower resistivity values are around 6 Ω m to 150 Ω m (indicated bythe color of  dark blue to light blue) which are located mostly on theupper central part and also in the left side  of the section. They areinterpreted as potential groundwater resources in unconfined aquifers in the area."
       },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     },
     {
-      "question": "According to IS 15736:2007, what is the range of resistivity (in Ohm-m) for groundwater? ",
-      "answers": {
-        "a": "10-100",
-        "b": "10-800",
-        "c": "10-1000",
-        "d": "10-8000"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "In the experiment, the inner electrodes are current electrodes and it causes the flow of current",
+      "question": "Wenner-Schlumberger is used as it is moderately sensitive to both horizontal and vertical structures.",
       "answers": {
         "a": "True",
         "b": "False"
@@ -45,80 +29,50 @@
         "a": "",
         "b": ""
       },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     },
     {
-      "question": "The apparent resistance depends on",
+      "question": "The method to determine the vertical changes in resistivity is known as",
       "answers": {
-        "a": "Potential drop",
-        "b": "Flow of current",
-        "c": "Distance between the electrodes",
+        "a": "Profiling",
+        "b": "Drilling",
+        "c": "Sounding",
+        "d": "Surveying"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "Apparent resistivity measurements involve systematically altering electrode spacings while conducting measurements at a single location or around a central point. This method is referred to as Vertical Electrical Sounding (VES) or Vertical Profiling.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Vertical resolution on a seismic section is dependent on what factors?",
+      "answers": {
+        "a": "The bandwidth of the wavelet or signal",
+        "b": "The main frequency present in the wavelet or signal",
+        "c": "The thickness of the beds that are being imaged",
         "d": "All of the above"
       },
       "explanations": {
         "a": "",
         "b": "",
         "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "The apparent resistivity measured in",
-      "answers": {
-        "a": "Ohm",
-        "b": "Mho",
-        "c": "Ohm-m",
-        "d": "Siemen-m"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "c",
-      "difficulty": ""
-    },
-    {
-      "question": "In general, the depth of the soil sample is",
-      "answers": {
-        "a": "One-eight to the distance between current electrodes",
-        "b": "One-sixth to the distance between current electrodes",
-        "c": "One-fourth to the distance between current electrodes",
-        "d": "One-third to the distance between current electrodes"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "d": "Vertical resolution on a seismic section is dependent on multiple factors, and all of the factors play a role in determining the quality of vertical resolution in seismic data."
       },
       "correctAnswer": "d",
-      "difficulty": ""
+      "difficulty": "intermediate"
     },
     {
-      "question": "The voltmeter is used for measuring the current",
+      "question": "When salinbity changes occur in a vertical profile",
       "answers": {
-        "a": "True",
-        "b": "False"
-      },
-      "explanations": {
-        "a": "",
-        "b": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "The terminals P1 and P2 in the georesistivity meter are connected to",
-      "answers": {
-        "a": "Current Electrode",
-        "b": "Potential Electrodes",
-        "c": "Battery",
-        "d": "None of the above"
+        "a": "The lower portion of the aquifer should be tapped",
+        "b": "The upper portion of thr aquifer should be tapped",
+        "c": "The middle portion of the aquifer should be tapped",
+        "d": "The whole aquifer should be tapped"
       },
       "explanations": {
         "a": "",
@@ -127,41 +81,7 @@
         "d": ""
       },
       "correctAnswer": "b",
-      "difficulty": ""
-    },
-    {
-      "question": "The terminals C1 and C2 in the georesistivity meter are connected to",
-      "answers": {
-        "a": "Current Electrode",
-        "b": "Potential Electrodes",
-        "c": "Battery",
-        "d": "None of the above"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "a",
-      "difficulty": ""
-    },
-    {
-      "question": "Which of the following instrument is NOT used in this test?",
-      "answers": {
-        "a": "Battery",
-        "b": "Stopwatch",
-        "c": "Hammer",
-        "d": "Electrodes"
-      },
-      "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-      "correctAnswer": "b",
-      "difficulty": ""
+      "difficulty": "advanced"
     }
   ]
 }

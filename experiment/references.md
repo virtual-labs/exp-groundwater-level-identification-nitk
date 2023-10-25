@@ -1,12 +1,28 @@
-1.	Mine Environmental Engineering Lab Material NITK Surathkal.
+<table style="text-align:justify;">
+<tr style="background-color: white">
+<th>References</th>
+<th>Contributors list</th>
+</tr>
+<tr style="background-color: white">
+<td>
+<ol >
+<li> IS 15736 (2007): Geological exploration by geophysical method (electrical resistivity) - Code of practice [WRD 5: Geological Investigation and Subsurface Exploration].</li>
 
-2.	Hartman, H. L., Mutmansky, J. M. & Wang, Y. J. (1982); “Mine Ventilation and Air Conditioning”; John Wiley & Sons, New York. 
+<li>IS 14436 (1997): Method of test for laboratory determination of resistivity on rock specimen[CED 48: Rock Mechanics].</li>
+<li>Abdullah M. Al-Amri (2018), &quot;APPLIED GEOPHYSICS&quot;, Dept. of Geology &amp; Geophysics, King Saud University, Riyadh.</li>
+<li>Sankar Kumar Nath, Shamsuddin Shahid, Hari Pada Patra (2000).  Geophysical Prospecting For Ground Water, Balkema Publishers.</li>
+<li>Hari Pada Patra, Sankar Kumar Nath (1999), Schlumberger geoelectric sounding in  ground water : (principles, interpretation and application), Taylor & Francis Publishers.</li>
 
-3.	Le Roux, W. L. (1972); Mine Ventilation Notes for Beginners”; The Mine Ventilation Society of South Africa. 
-
-4.	McPherson, M. J. (1993); Subsurface Ventilation and Environmental Engineering”; Chapman & Hall, London. 
-
-5.	Misra  G.B.   (1986); “Mine Environment and Ventilation”; Oxford University Press, Calcutta, India.
-
-6.	Vutukuri, V. S. & Lama, R. D. (1986); “Environmental Engineering in Mines”; Cambridge University Press, Cambridge.
-
+</ol>
+</td>
+<td>Dr. Pruthviraj U | NITK<br></br>
+Contributors :
+<ul style="list-style-type: none;">
+<li>Prajna K | NITK</li>
+<li>Dr. Vyshali | NITK</li>
+<li>Nishali M Poojari | NITK</li>
+<li>Aishwarya Hegde A| NITK</li>
+<li>Anusha B Salian| NITK</li>
+  </ul></td>
+</tr>
+</table>

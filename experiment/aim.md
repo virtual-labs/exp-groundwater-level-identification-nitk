@@ -1,1 +1,1 @@
-To obtain the resistivity of the ground with the help of Georesistivity meter.
+### Determination of Ground water  Level by Using Georesistivity method

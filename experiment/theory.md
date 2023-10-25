@@ -1,19 +1,21 @@
-### INTRODUCTION<br>
+### Theory
 
-<p style="text-indent:50px;text-align:justify;"> The electrical resistivity test is useful for studying the existence of subsurface structures by observing the differences in their resistance to electrical current flow and hence determining the presence of groundwater. The objectives of this approach in the field of groundwater exploration is to identify groundwater bearing rocks,  the thickness and lateral extent of the aquifers, to estimate the depth to the water table, the delineation of the wetlands, the depth to the bedrock, structures and stratigraphic conditions such as fractures, dykes, etc., distribution and configuration of saltwater/freshwater interface, etc.
-</p>
+The electrical resistivity method is a technique used to assess the apparent resistivity of soils and rocks as a function of electrode depth or position. Soil resistivity is influenced by factors such as porosity, permeability, ionic content in pore fluids, and clay mineralization.
 
-<p style="text-indent:50px;text-align:justify">Resistivity values of rocks are controlled by the chemical composition of the minerals, density, porosity, water content, water quality and temperature.
-In general, the distance between the current electrodes is proportional to the depth of the sample. (In general, the depth of the soil sample  is one-third to the distance between electrodes).
-</p>
+In hydrogeological and environmental investigations, the most commonly employed electrical method is the Vertical Electrical Sounding (VES) or resistivity sounding. During resistivity surveys, a pair of current electrodes is placed at a specific distance from each other, and the potential difference is measured between another pair of potential electrodes. These electrode pairs are typically arranged in a linear configuration. Common electrode array configurations include dipole-dipole, pole-pole, Schlumberger, and Wenner arrays.
 
-<p style="text-indent:50px;text-align:justify">The working principle of geoelectric is to inject electrical current into the earth. The electrode consists of two current electrodes (C<sub>1</sub> and C<sub>2</sub>) that deliver the electric current, and two potential electrodes reading the potential difference value after the current through the rocks (P<sub>1</sub> and P<sub>2</sub>). The four electrodes are plugged into the ground at a certain distance. The longer the distance of the current electrode will cause the flow of electric current to penetrate deeper rock layers. With the flow of electric current, it will cause an electrical voltage in the ground. Electrical voltage occurring at the ground surface is measured using a multimeter connected via two voltage electrode P<sub>1</sub> and P<sub>2</sub>, which is shorter than the distance of C<sub>1</sub>-C<sub>2</sub> electrode. When the position of the electrode distance of the current is changed to be higher than the electric voltage, potential electrode also changes according to the information of the type of rock that participates in the injection of electric currents at a greater depth.</p>
+The apparent resistivity represents the average resistivity of all the soils and rocks affecting the electric current. It is calculated by dividing the measured potential difference by the input current and then multiplying it by a geometric factor specific to the chosen electrode array and spacing. The Schlumberger array is a geotechnical investigation method which determines the electrical resistivity of the soil.  
+
+The Schlumberger array is a geotechnical investigation method which determines the electrical resistivity of the soil. This is similar to the Wenner probe test, but it uses multiple current electrodes rather than just two. This allows for a more detailed and accurate measurement of soil resistivity.
+
+The Schlumberger arrangement has the potential electrodes close together. The apparent resistivity is  calculated by  
+
+![Alt text](images/CodeCogsEqn.png)
 
 
-<p style="text-indent:50px;text-align:justify">Measurements for resistivity surveys are made by the streaming current into the ground through two electrode type (potential electrode and current electrode) and measuring the resulting voltage difference across two potential electrodes. In its most basic form, the resistivity meter has a current source and voltage measurement circuit connected by cable to a minimum of four electrodes. The primary data obtained from the resistivity survey is current (I) injected into the ground, the position of the potential electrode and current,  and the resulting voltage difference (V) between the potential electrodes.
 
-<p style="text-indent:50px;text-align:justify">Current and voltage measurements are then converted into apparent resistance (a) of clear values using the following formula </p>
-
-<p style="text-indent:50px;text-align:justify">where k is a geometric factor that depends on the configuration of current and potential electrodes. Since the subsurface is heterogeneous under normal conditions, the resistivity measured is a weighted mean of the resistivity of all the individual rock material bodies that make up the earth and is termed as "apparent resistivity".</p>
-
-<p style="text-indent:50px;text-align:justify">Several electrode configurations are available viz., Wenner array, Schlumberger array, tri-electrode array, dipole-dipole array etc. The Schlumberger and Wenner arrays are used for shallow investigations. Dipole systems are usually employed for deeper studies. However, Schlumberger electrode configuration has been employed in the present investigation because of its advantages over other methods both in the field survey as well as in the interpretation of data. </p>
+When apparent resistivity is plotted against the electrode spacing  Schlumberger for various spacing one location, a smooth curve can be drawn through the points.
+The interpretation of such a resistivity-spacing curve in terms of subsurface conditions is a complex and frequently difficult problem. The solution can be obtained two parts.
+i. Interpretation in terms of various layers of actual resistivity and their depths. 
+ii. Interpretation of the actual resistivities in terms of subsurface geologic and ground
+water conditions. 
