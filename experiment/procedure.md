@@ -17,7 +17,7 @@
      ![Alt text](images/img6.png)
 
 7.  Hover on each dot to know the distance between the electrodes as well as the resistivity values.</br>
-     ![Alt text](images/img61.png)
+     ![Alt text](images/img61.PNG)
 
 8.  Click on the next button and then place the mouse over the "Variables used in the calculation" to display all the variables and also calculate the apparent resistivity values using the table below.</br>
      ![Alt text](images/img7.png)
