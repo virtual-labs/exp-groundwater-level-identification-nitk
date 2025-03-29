@@ -4,7 +4,7 @@
     <th>Contributors list</th>
   </tr>
   <tr style="background-color: transparent;">
-  <td width="400">
+  <td width="700">
     <ol>
 <li> IS 15736 (2007): Geological exploration by geophysical method (electrical resistivity) - Code of practice [WRD 5: Geological Investigation and Subsurface Exploration].</li>
 <li>IS 14436 (1997): Method of test for laboratory determination of resistivity on rock specimen [CED 48: Rock Mechanics].</li>
