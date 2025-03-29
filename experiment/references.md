@@ -4,7 +4,7 @@
 <th>Contributors list</th>
 </tr>
 <tr style="background-color: white">
-<td>
+<td width="350">
 <ol >
 <li> IS 15736 (2007): Geological exploration by geophysical method (electrical resistivity) - Code of practice [WRD 5: Geological Investigation and Subsurface Exploration].</li>
 
