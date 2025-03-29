@@ -12,9 +12,9 @@
 <li>Sankar Kumar Nath, Shamsuddin Shahid, Hari Pada Patra (2000).  Geophysical Prospecting For Ground Water, Balkema Publishers.</li>
 <li>Hari Pada Patra, Sankar Kumar Nath (1999), Schlumberger geoelectric sounding in  ground water : (principles, interpretation and application), Taylor & Francis Publishers.</li>
 </ol>
-  Developer:
+
 </td>
-<td>Dr. Pruthviraj U | NITK<br></br>
+<td>  Developer: Dr. Pruthviraj U | NITK<br></br>
 Contributors :
 <ul style="list-style-type: none;">
 <li>Prajna K | NITK</li>
