@@ -4,7 +4,7 @@
 <th>Contributors list</th>
 </tr>
 <tr style="background-color: white">
-<td width="600">
+<td width="750">
 <ol >
 <li> IS 15736 (2007): Geological exploration by geophysical method (electrical resistivity) - Code of practice [WRD 5: Geological Investigation and Subsurface Exploration].</li>
 <li>IS 14436 (1997): Method of test for laboratory determination of resistivity on rock specimen [CED 48: Rock Mechanics].</li>
@@ -12,6 +12,7 @@
 <li>Sankar Kumar Nath, Shamsuddin Shahid, Hari Pada Patra (2000).  Geophysical Prospecting For Ground Water, Balkema Publishers.</li>
 <li>Hari Pada Patra, Sankar Kumar Nath (1999), Schlumberger geoelectric sounding in  ground water : (principles, interpretation and application), Taylor & Francis Publishers.</li>
 </ol>
+  Developer:
 </td>
 <td>Dr. Pruthviraj U | NITK<br></br>
 Contributors :
