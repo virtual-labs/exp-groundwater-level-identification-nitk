@@ -8,6 +8,8 @@
 
 | SNo. | Name | Institute |
 | :--: | :-- | :-------: |
-|  1   | Anusha B Salian | NITK |
-|  2   | Ashika Pai | NITK |
-|  3   | Mahima N  | NITK |
+|  1   | Prajna K | NITK |
+|  2   | Dr. Vyshali | NITK |
+|  3   | Nishali M Poojari | NITK |
+|  3   | Aishwarya Hegde A  | NITK |
+|  3   | Anusha B Salian | NITK |
