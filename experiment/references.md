@@ -19,7 +19,6 @@
       <li>Dr. Vyshali | NITK</li>
       <li>Nishali M Poojari | NITK</li>
       <li>Aishwarya Hegde A | NITK</li>
-      <li>Anusha B Salian | NITK</li>
     </ul></td>
   </tr>
 </table>
