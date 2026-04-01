@@ -11,10 +11,10 @@
         "d": "6 Ωm to 150 Ωm (dark blue to light blue)"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": "The lower resistivity values are around 6 Ω m to 150 Ω m (indicated bythe color of  dark blue to light blue) which are located mostly on theupper central part and also in the left side  of the section. They areinterpreted as potential groundwater resources in unconfined aquifers in the area."
+        "a": " 3000 Ωm to >15000 Ωm (light red to dark purple): These are the highest resistivity values on the scale. As labeled in the figure, these represent the 'Bedrock of granite.' Solid, unweathered rock like granite has very few open pores or connected paths for water, making it highly resistant to electrical current.",
+        "b": "150 Ωm to 3000 Ωm (green to brown): These represent intermediate values. In this context, they likely represent weathered rock, unsaturated soil, or dry sand. While they might contain some moisture, they are not saturated enough to be considered 'potential groundwater resources' compared to the blue zones.",
+        "c": "6 Ωm to > 15000 Ωm: This range covers the entire legend of the graph. It includes everything from the most productive water zones to the solid, dry bedrock. It is too broad to be an 'interpretation' of a specific resource.",
+        "d": "n this Electrical Resistivity Tomography (ERT) profile, the zones exhibiting low resistivity values between 6.14Ω-m and 150 Ω-m are identified as areas of high groundwater potential. These 'blue pools' represent conductive zones because natural groundwater contains dissolved minerals and salts that act as electrolytes, allowing electrical current to flow more easily than in dry rock. Because aquifers are typically found in porous materials like sand or fractured zones, they trap this conductive water and create the distinct low-resistivity signature seen in the blue spectrum of the scale. Geologically, these saturated zones are shown sitting directly above the denser, high-resistivity bedrock and beneath the surface stream, pinpointing exactly where the water is collecting for potential extraction. "
       },
       "correctAnswer": "d",
       "difficulty": "advanced"
@@ -26,8 +26,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "In geophysics, the Wenner-Schlumberger array serves as a versatile hybrid that balances the trade-off between vertical resolution and horizontal sensitivity. By combining the constant electrode spacing of the Wenner array with the expanding outer system of the Schlumberger array, it effectively maps both deep horizontal layers and lateral changes like buried walls or faults. This design makes it more sensitive to vertical layering than a Dipole-Dipole array, yet superior at finding horizontal variations compared to a pure Wenner configuration. Furthermore, it maintains a robust signal-to-noise ratio, making it highly reliable in field conditions with significant background noise.",
+        "b": "The statement is true because claiming otherwise would incorrectly imply that the array is limited to being either purely vertical or purely horizontal. While a standard Schlumberger sounding excels at depth but lacks lateral resolution, and a Dipole-Dipole array effectively identifies vertical structures but suffers from poor signal strength, the Wenner-Schlumberger configuration was engineered to bridge these gaps. It provides a necessary middle ground for 2D Electrical Resistivity Tomography (ERT) by maintaining sensitivity to both depth and lateral features. Therefore, labeling the statement as false ignores the primary functional advantage of this hybrid design in complex geological mapping."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -41,10 +41,10 @@
         "d": "Surveying"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "Apparent resistivity measurements involve systematically altering electrode spacings while conducting measurements at a single location or around a central point. This method is referred to as Vertical Electrical Sounding (VES) or Vertical Profiling.",
-        "d": ""
+        "a": "Profiling: This is the opposite of sounding. Resistivity Profiling is used to determine lateral (horizontal) changes in resistivity at a constant depth. In this method, the electrode spacing remains the same, and the entire setup is moved along a line to find vertical features like faults, mineral veins, or buried pipes.",
+        "b": "Drilling: This is a physical method, not a geophysical one. While drilling provides a lithology of vertical changes, it is an invasive and expensive process. Geophysics (Sounding) is used to see those changes from the surface without having to drill a hole.",
+        "c": "Vertical Electrical Sounding (VES) maps vertical subsurface layers like the water table by gradually increasing electrode spacing, which forces the electrical bulb deeper into the earth. This process generates a 1D model of the ground directly beneath the array’s center to identify distinct layers such as overburden and bedrock. The Schlumberger array is the preferred configuration for this method because it enables deep penetration while only requiring the outer electrodes to be moved frequently.",
+        "d": "Surveying: This is a general term that encompasses all field operations, including both profiling and sounding. It does not specifically refer to the vertical measurement of resistivity."
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
@@ -58,9 +58,9 @@
         "d": "All of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
+        "a": " The bandwidth: While the main frequency sets the limit, the bandwidth (the range of frequencies) determines the sharpness or purity of the wavelet. A broad bandwidth creates a compressed, short wavelet in the time domain, which prevents overlapping of signals and reduces ringing,  allowing for clearer separation of thin layers.",
+        "b": "The main frequency: Resolution is directly related to the wavelength (𝝺) of the signal. Higher frequencies result in shorter wavelengths (𝝺 = v/f). According to the Rayleigh Criterion, the minimum thickness a bed must have to be resolved is typically 1/4 of the wavelength (𝝺/4). Therefore, higher frequencies provide better vertical resolution.",
+        "c": "The thickness of the beds: Resolution is fundamentally a comparison between the signal and the target. If the bed thickness is less than the tuning thickness (𝝺/4), the reflections from the top and bottom interfere constructively or destructively, making it impossible to determine the true thickness or even the existence of two separate boundaries.",
         "d": "Vertical resolution on a seismic section is dependent on multiple factors, and all of the factors play a role in determining the quality of vertical resolution in seismic data."
       },
       "correctAnswer": "d",
@@ -75,10 +75,10 @@
         "d": "The whole aquifer should be tapped"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The lower portion of the aquifer should be tapped: This is the most dangerous choice. Tapping the bottom puts the well intake directly into the densest, saltiest water. Furthermore, pumping from the bottom causes 'upconing,' where the suction pressure pulls the underlying salt water upward into the well, permanently ruining the water source.",
+        "b": "Explanation: In hydrogeology, salinity profiles in an aquifer are typically governed by the density of the water. This is a critical consideration for well design in coastal areas or regions with saline groundwater intrusion.",
+        "c": "The middle portion of the aquifer should be tapped: While seemingly a safe compromise, the middle portion often consists of the brackish transition zone (the halocline). Water here is likely to have a high total dissolved solids (TDS) count, making it unsuitable for drinking or irrigation.",
+        "d": "The whole aquifer should be tapped: Screening the entire depth of the aquifer causes vertical mixing. When the pump starts, it will draw from both the fresh top and saline bottom, resulting in a blended water supply that is likely too salty for use."
       },
       "correctAnswer": "b",
       "difficulty": "advanced"
