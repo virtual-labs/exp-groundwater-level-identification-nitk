@@ -67,7 +67,7 @@
       "difficulty": "intermediate"
     },
     {
-      "question": "When salinbity changes occur in a vertical profile",
+      "question": "When salinity varies within a vertical profile, which part of the aquifer should be tapped?",
       "answers": {
         "a": "The lower portion of the aquifer should be tapped",
         "b": "The upper portion of thr aquifer should be tapped",
@@ -76,7 +76,7 @@
       },
       "explanations": {
         "a": "The lower portion of the aquifer should be tapped: This is the most dangerous choice. Tapping the bottom puts the well intake directly into the densest, saltiest water. Furthermore, pumping from the bottom causes 'upconing,' where the suction pressure pulls the underlying salt water upward into the well, permanently ruining the water source.",
-        "b": "Explanation: In hydrogeology, salinity profiles in an aquifer are typically governed by the density of the water. This is a critical consideration for well design in coastal areas or regions with saline groundwater intrusion.",
+        "b": "In hydrogeology, salinity profiles in an aquifer are typically governed by the density of the water. This is a critical consideration for well design in coastal areas or regions with saline groundwater intrusion.",
         "c": "The middle portion of the aquifer should be tapped: While seemingly a safe compromise, the middle portion often consists of the brackish transition zone (the halocline). Water here is likely to have a high total dissolved solids (TDS) count, making it unsuitable for drinking or irrigation.",
         "d": "The whole aquifer should be tapped: Screening the entire depth of the aquifer causes vertical mixing. When the pump starts, it will draw from both the fresh top and saline bottom, resulting in a blended water supply that is likely too salty for use."
       },
