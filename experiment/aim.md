@@ -1,1 +1,1 @@
-### Aim of the experiment
+Determination of Ground water Level through Georesistivity method

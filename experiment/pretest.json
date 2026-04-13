@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Pick up the correct statement from the following:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A confined bed of impervious material laid over an aquifer, is known as an aquiclude",
+        "b": "The top most water bearing strata having no aquifer, is known as non-artesian aquifer",
+        "c": "The ordinary gravity wells which supply water from the top most water bearing strata, are called water table wells",
+        "d": "All the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Statement (A) is correct: An aquiclude is a geological formation that is porous and may contain water but is impervious (incapable of transmitting water in significant quantities). A classic example is a thick layer of clay sitting on top of a sandy aquifer. It acts as a 'lid' or 'bottom' that traps water.",
+        "b": "Statement (B) is correct: A non-artesian aquifer (also known as an unconfined aquifer) is the topmost water-bearing layer. Because there is no confining layer (aquiclude) above it, the water is not under pressure. The water level you see in this strata is simply the atmospheric water table.",
+        "c": "Statement (C) is correct: Water table wells (or gravity wells) are the most common type of shallow well. They penetrate the topmost unconfined strata. The water in these wells is not forced up by geological pressure; it simply pools in the hole at the level of the local water table, and 'gravity' causes the surrounding water to flow into the well when pumped.",
+        "d": "In groundwater hydrology, these terms define the different structural 'containers' and 'conveyors' of water beneath the Earth's surface. Each statement accurately describes a standard geological or hydraulic condition."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What electrode configuration provides the greatest depth of exploration in a uniform earth?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Three electrode",
+        "b": "Two electrode",
+        "c": "Wenner",
+        "d": "Schlumberger"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Three electrode (Pole-Dipole) is a compromise between Two-electrode and Four-electrode arrays. It has a greater depth of exploration than Wenner, but because one electrode is still relatively 'near' the others compared to the Two-electrode setup, its depth penetration is slightly less.",
+        "b": "The maximum depth of investigation in homogeneous earth is achieved through the two-electrode configuration. In this setup, one electrode serves to introduce current into the ground, while the other electrode is employed to measure the potential difference. This arrangement facilitates a deeper penetration of the electric field into the earth, consequently resulting in an increased depth of exploration. In contrast, the three-electrode configuration, as well as the Wenner and Schlumberger configurations, employ multiple electrodes, potentially constraining the depth of investigation. ",
+        "c": "The Wenner array is excellent for vertical resolution (detecting thin horizontal layers), but it has the shallowest depth of exploration. The current is strongly constrained between the two outer electrodes, squeezing the sensing zone closer to the surface. ",
+        "d": "While the Schlumberger array is better for depth than the Wenner array (especially for deep sounding), it still uses four electrodes in a relatively contained area. The mutual interference of the four electrodes limits the depth of the 'current bulbs' compared to the nearly unrestricted flow of the Two-electrode system."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which electrode configuration acquires maximum vertical resolution?",
+      "answers": {
+        "a": "Schlumberger",
+        "b": "Pole Dipole",
+        "c": "Half Wenner",
+        "d": "Wenner"
+      },
+      "explanations": {
+        "a": "The Schlumberger array is optimized for Depth of Investigation, not vertical resolution. Because the potential electrodes (M, N) are kept very close together in the center, the array is less sensitive to the specific depths of horizontal boundaries and more focused on the overall 'average' resistivity of the deep ground.",
+        "b": "Pole-Dipole is an asymmetrical array. While it provides good lateral (horizontal) resolution—meaning it's great for finding vertical features like mineral veins or dikes—it is less effective than the Wenner array at defining clean, horizontal layer boundaries.",
+        "c": "The Pole-Pole (or Two-electrode) array is the king of Depth Exploration. However, because its electrodes are so far apart (some at 'infinity'), its sensitivity is spread over a massive volume of earth. This 'smears' the data, making it the worst choice for resolving fine vertical layers.",
+        "d": "The Wenner electrode configuration excels in achieving maximum vertical resolution due to its utilization of the widest electrode spacing in comparison to other alternatives. This extended spacing provides improved depth penetration capability and enhances the ability to detect subtle subsurface variations. Conversely, the Schlumberger configuration adopts the narrowest spacing, leading to diminished vertical resolution. The Pole Dipole and Half Wenner configurations feature intermediate spacing, resulting in lower vertical resolution when contrasted with the Wenner configuration."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The electrical Resistivity Method is generally used ",
+      "answers": {
+        "a": "In the investigation of the geological structure",
+        "b": "In engineering and groundwater investigations",
+        "c": "For tracking dykes",
+        "d": "For locating ore bodies"
+      },
+      "explanations": {
+        "a": "While true that resistivity can help map layers, this is a very broad category. Large-scale 'geological structure' (like the thickness of the Earth's crust or deep tectonic plates) is usually investigated using Seismic or Magnetotelluric methods, which can penetrate much deeper than standard DC(Direct Current) resistivity.",
+        "b": "The Electrical Resistivity Method finds widespread application in engineering and groundwater studies. This technique revolves around the measurement of the electrical resistivity of subsurface materials, enabling the assessment of their composition and characteristics. Its utility extends to the identification of subterranean features like faults or fractures, pivotal information for engineering endeavors. Furthermore, the resistivity method aids in the detection and evaluation of groundwater reservoirs, providing insights into their volume and quality. Through the analysis of resistivity data, geologists and engineers are empowered to make well-informed choices regarding the viability and planning of construction projects while efficiently managing groundwater resources.",
+        "c": "A dyke is a vertical sheet of rock, often igneous rocks.. While resistivity can find them, it isn't the 'common' choice. Magnetic methods are almost always preferred for tracking dykes because these rocks often contain magnetite, which creates a very sharp and easy-to-track magnetic signal.",
+        "d": "Most metal ores are highly conductive (sulfides, etc.). While resistivity is used, the Induced Polarization (IP) or Electromagnetic (EM) methods are specifically designed for mining. Resistivity alone struggles to distinguish a small ore body from surrounding conductive clay."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The depth limit in electrical sounding is:",
+      "answers": {
+        "a": "More than 300 m",
+        "b": "More than 1 km",
+        "c": "More than 5 km",
+        "d": "More than 10 km"
+      },
+      "explanations": {
+        "a": "In electrical sounding (a method used in geophysical surveys like resistivity surveys), the depth of investigation depends on electrode spacing and subsurface conditions. In practice, the method is generally effective up to a few hundred meters, typically around 300 m or slightly more under favorable conditions. Beyond this depth, the signal becomes weak and less reliable due to factors like noise, decreasing resolution, and limitations in current penetration.",
+        "b": "Electrical sounding rarely reaches depths of 1 km under normal field conditions, as its effectiveness is limited by practical constraints. At such greater depths, the resolution becomes very poor due to signal weakening and interference, making the obtained results unreliable and less accurate for interpretation.",
+        "c": "More than 5 km is far beyond the capability of standard electrical resistivity methods, as these techniques are not designed to investigate such great depths. At this level, electrical sounding becomes ineffective, and therefore such depths are typically explored using seismic methods rather than electrical resistivity surveys.",
+        "d": "The term 'limiting depth of electrical sounding' denotes the furthest depth that can be precisely assessed through this method. In this context, the accurate response is 'exceeding 10 kilometers,' signifying that electrical sounding can effectively gauge depths beyond the 10-kilometer mark"
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
